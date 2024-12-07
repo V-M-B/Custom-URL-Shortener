@@ -1,0 +1,19 @@
+{
+  "name": "custom-url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4",
+    "nanoid": "^5.0.9",
+    "nodemon": "^3.1.7",
+    "shortid": "^2.2.16"
+  }
+}
