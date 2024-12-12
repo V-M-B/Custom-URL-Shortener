@@ -1,7 +1,13 @@
-const express=require("express")
-const {handlegenrateNewShortURL}=require('../controllers/url')
-const router=express.Router();
+const express = require("express");
+const {
+  handleGenerateNewShortURL,
+  handleGetAnalytics,
+} = require("../controllers/url");
 
-router.post("/",handlegenrateNewShortURL)
+const router = express.Router();
 
-module.exports=router
+router.post("/", handleGenerateNewShortURL);
+
+router.get("/analytics/:shortId", handleGetAnalytics);
+
+module.exports = router;
